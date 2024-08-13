@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonteFormulario);
+}
+:root 
+{
+    --fonteFormulario : "Carme", sans-serif;
+}
+body 
+{
+    background-color: #ADBCE6;
+}
+form 
+{
+    border: 1px solid black;
+    max-height: 151em;
+    max-width: 40em;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+.formEnderecos
+{
+    max-height: 91em;
+}
+
+.formAcademico
+{
+    max-height: 86em;
+}
+
+.campo,.titulo
+{
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 2em;
+    gap: 1px;
+}
+
+.campoInput,select 
+{
+    /* width: 30em; */
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-color: grey;
+    border-radius: 4px;
+    color: black;
+    outline: none;
+    height: 25px;
+}
+
+.campoInput:hover
+{
+    border-color: goldenrod;
+}
+
+label
+{
+    font-size: 20px;
+}
+
+.titulo_cadastre
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+header 
+{
+    border: solid 1px white;
+    height: 7em;
+    background-color: #6f46b2;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.formulario
+{
+    margin-top: -70px;
+}
+
+.escolha
+{
+    border: solid 1px yellow;
+    width: 10em;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inputEscolha
+{
+    width: 15em;
+    
+}
+
+.escolhaCompleto
+{
+    display: grid;
+    margin-left: 200px;
+    margin: 10px;
+    gap: 1px;
+    border-color: grey;
+    border-radius: 4px;
+    color: black;
+}
+
+.escolhaRadioOpcoes
+{
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.escolhaRadio
+{
+    font-size: 20px;
+    display: grid;
+    
+    margin: 10px;
+    gap: 1px;
+}
+.estrangeiro
+{
+    margin-right: 50px;
+    padding: 1px;
+}
+.sexo
+{
+    padding: 4px;
+}
+
+.enviar 
+{
+    display: grid;
+    justify-content: right;
+}
+.proximo
+{
+    background-color: rgb(56, 119, 56);
+    margin-right: 30px;
+    border: none;
+    width: 70px;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+button:hover
+{
+    background-color: rgb(61, 109, 61);
+}
+
+.textoProximo
+{
+    text-decoration: none;
+    color: white;
+}
+
+.anexarArquivo
+{
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 2em;
+    gap: 1px;
+    width: 30em;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.lgpd
+{
+    text-decoration: none;
+    background-color: rgb(56, 119, 56);
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+}
+/* .borderDiv
+{
+    border: 1px solid black;
+} */
+
+.voltarAnterior
+{
+    background-color: rgb(56, 119, 56);
+    border: none;
+    width: 70px;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.textoVoltar
+{
+    text-decoration: none;
+    color: white;
+}
+
+.arrumarinput
+{
+    margin-left: -13px;
+}
+
+@media(max-width: 768px)
+
+{
+    header 
+    {
+        max-width: 30em;
+        min-width: 20em;
+    }
+    .campoInput,select 
+    {
+        max-width: 19em;
+        min-width: 10em;
+    }
+
+    form 
+    {
+        max-width: 26em;
+        min-width: 20em;
+        min-height: 150em;
+        max-height: 100em;
+    }
+
+    .formEnderecos
+    {
+        min-height: 94em;
+        max-height: 100em;
+    }
+   
+    .formAcademico
+    {
+        min-height: 70em;
+    }
+
+}
+
+@media (min-width: 300px)
+{
+
+    .campoInput,select 
+    {
+        max-width: 15em;
+        min-width: 13em;
+    }
+    h1 
+    {
+        font-size: 28px;
+    }
+}
+
+/* @media(max-width: 412px)
+ {
+    header 
+    {
+        min-width: 10fr;
+        max-width: 20fr;
+        min-height: 5em;
+        max-height: 5em;
+    }
+    
+    form 
+    {
+        width: 25em;
+    }
+    
+    .campoInput 
+    {
+        width: 17em;
+    }
+}
+
+
+@media(max-width: 344px) 
+{   
+
+    form 
+    {
+        width: 15em;
+        height: 148em;
+    }
+    
+    .campoInput 
+    {
+        width: 10em;
+    }
+    
+    .formEnderecos 
+    {
+        height: 94em;
+    }
+}
+
+
+@media(max-width: 540px) 
+{
+    form 
+    {
+        width: 33em;
+    }
+    
+    .campoInput 
+    {
+        width: 24em;
+    }
+}
+
+@media(min-width: 2000px) 
+{
+    header 
+    {
+        min-width: 10fr;
+        max-width: 20fr;
+        min-height: 5em;
+        max-height: 5em;
+    }
+    
+    form 
+    {
+        width: 25em;
+    }
+    
+    .campo 
+    {
+        width: 5em;
+        margin-left: 150px;
+    }
+    
+    .campoInput 
+    {
+        width: 17em;
+    }
+    
+    .arrumarinput 
+    {
+        margin-left: -14px;
+    }
+}
+
+@media(min-width: 412px) 
+{
+    form 
+    {
+        width: 25em;
+        
+    }
+    .campoInput 
+    {
+        width: 17em;
+    }
+
+    .formEnderecos 
+    {
+        height: 93em;
+    }
+
+    .formAcademico
+    {
+        height: 88em;
+    }
+}
+
+@media(max-width: 360px)
+{
+    form 
+    {
+        width: 22em;
+    }
+
+    .campoInput 
+    {
+        width: 17em;
+    }
+
+    .arrumarinput 
+    {
+        margin-left: -28px;
+    }
+} */
